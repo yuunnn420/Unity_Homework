@@ -69,7 +69,7 @@ public class PlayerMovement : MonoBehaviour
             }
             else if (IsGrounded() && slide)
             {
-                animator.Play("Slide");
+                //animator.Play("Slide");
             }
             /*else if(alive && IsGrounded())
             {
