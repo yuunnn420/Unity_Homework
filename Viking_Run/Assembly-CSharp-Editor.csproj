@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5A0769DA-25DA-A68D-BA58-6ED404CB536B}</ProjectGuid>
+    <ProjectGuid>{2AFB5748-0B48-E722-C4A3-D2B0F0F12089}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -53,7 +53,7 @@
     <UnityVersion>2020.3.23f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\unity-chan!\Unity-chan! Model\Editor\CreateLocatorHere.cs" />
+    <Compile Include="Assets\Resources\unity-chan!\Unity-chan! Model\Editor\CreateLocatorHere.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -719,7 +719,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{B2B58FB2-4462-6B0C-A872-40DD957E5FE0}</Project>
+      <Project>{CADA6886-D1D0-7EC4-7159-3B70456F68A1}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
   </ItemGroup>
