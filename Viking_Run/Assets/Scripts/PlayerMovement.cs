@@ -34,7 +34,6 @@ public class PlayerMovement : MonoBehaviour
     {
         return Physics.Raycast(transform.position, Vector3.down, margin);
     }
-    // Update is called once per frame
     void Update()
     {
         if (alive)

@@ -2,13 +2,22 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Coin
-    - Coinspawner
     - ExitGame
     - GameIcon
     - PlayerMovement
     - SceneSwitcher
     - SpawnTile
     - TrailCamera
+    - UnityChan.AutoBlink
+    - UnityChan.FaceUpdate
+    - UnityChan.IKCtrlRightHand
+    - UnityChan.IdleChanger
+    - UnityChan.RandomWind
+    - UnityChan.SpringBone
+    - UnityChan.SpringCollider
+    - UnityChan.SpringManager
+    - UnityChan.ThirdPersonCamera
+    - UnityChan.UnityChanControlScriptWithRgidBody
     - VikingController
     - dragonController
     Unity.Rider.Editor.dll:
@@ -16,10 +25,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -85,34 +92,56 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1514}
     - Class: 114
+      Script: {instanceID: 2000}
+    - Class: 114
       Script: {instanceID: 2080}
     - Class: 114
       Script: {instanceID: 2392}
     - Class: 114
       Script: {instanceID: 2524}
     - Class: 114
-      Script: {instanceID: 2706}
+      Script: {instanceID: 2660}
     - Class: 114
-      Script: {instanceID: 2784}
+      Script: {instanceID: 2682}
     - Class: 114
-      Script: {instanceID: 3000}
+      Script: {instanceID: 2704}
     - Class: 114
-      Script: {instanceID: 3220}
+      Script: {instanceID: 2782}
     - Class: 114
-      Script: {instanceID: 3228}
+      Script: {instanceID: 2946}
     - Class: 114
-      Script: {instanceID: 3456}
+      Script: {instanceID: 2998}
     - Class: 114
-      Script: {instanceID: 4172}
+      Script: {instanceID: 3014}
     - Class: 114
-      Script: {instanceID: 23444}
+      Script: {instanceID: 3026}
     - Class: 114
-      Script: {instanceID: 23446}
+      Script: {instanceID: 3076}
     - Class: 114
-      Script: {instanceID: 23448}
+      Script: {instanceID: 3218}
     - Class: 114
-      Script: {instanceID: 23450}
+      Script: {instanceID: 3226}
+    - Class: 114
+      Script: {instanceID: 3260}
+    - Class: 114
+      Script: {instanceID: 3452}
+    - Class: 114
+      Script: {instanceID: 4042}
+    - Class: 114
+      Script: {instanceID: 4164}
+    - Class: 114
+      Script: {instanceID: 4746}
+    - Class: 114
+      Script: {instanceID: 23290}
+    - Class: 114
+      Script: {instanceID: 29862}
+    - Class: 114
+      Script: {instanceID: 29864}
+    - Class: 114
+      Script: {instanceID: 29866}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 124
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
@@ -141,6 +170,8 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 319
       Script: {instanceID: 0}
     Assets/Scenes/SampleScene.unity:
     - Class: 1
@@ -198,25 +229,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2524}
     - Class: 114
-      Script: {instanceID: 2670}
+      Script: {instanceID: 2668}
     - Class: 114
-      Script: {instanceID: 2706}
+      Script: {instanceID: 2704}
     - Class: 114
-      Script: {instanceID: 2784}
+      Script: {instanceID: 2782}
     - Class: 114
-      Script: {instanceID: 3000}
+      Script: {instanceID: 2998}
     - Class: 114
-      Script: {instanceID: 3350}
+      Script: {instanceID: 3348}
     - Class: 114
-      Script: {instanceID: 3824}
+      Script: {instanceID: 3858}
     - Class: 114
-      Script: {instanceID: 3866}
+      Script: {instanceID: 3880}
     - Class: 114
-      Script: {instanceID: 3888}
+      Script: {instanceID: 4164}
     - Class: 114
-      Script: {instanceID: 4172}
+      Script: {instanceID: 4586}
     - Class: 114
-      Script: {instanceID: 4594}
+      Script: {instanceID: 17656}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -507,12 +538,6 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BridgeSendor
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineHardLookAt
@@ -524,7 +549,7 @@ ScriptsOnlyBuild:
     className: SpringManager
   - hash:
       serializedVersion: 2
-      Hash: 8e7eb8d267247a80b084f55a39183db4
+      Hash: 3d3c9ac0dde0902081ce704f38cdfb68
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SpawnTile
@@ -791,12 +816,6 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: NewBehaviourScript
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
     className: ExitGame
   - hash:
       serializedVersion: 2
@@ -876,12 +895,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Mask
-  - hash:
-      serializedVersion: 2
-      Hash: c56951d074f9210206588921ad9ac084
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Coinspawner
   - hash:
       serializedVersion: 2
       Hash: e6d75f1a9bc0c6f7085df0baa077e688
@@ -1108,4 +1121,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/GameMenu.unity
   - Assets/Scenes/SampleScene.unity
-  playerPath: D:/Viking Run/Builds/20211222/New Unity Project.exe
+  playerPath: D:/Viking Run/Builds/20211227/New Unity Project.exe

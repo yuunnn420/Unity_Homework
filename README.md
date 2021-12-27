@@ -11,6 +11,7 @@ animation的部分因為會一直往前跑的關係，寫的是run<->jump , GAME
 
 # Bonus
 Infinite ground spawner:
+路有時候會變窄，隨機靠左邊或右邊。
 地圖可以無限生成，且不會與舊地圖重疊。
 
 Music:
@@ -19,7 +20,7 @@ Music:
 A good game structure design (code):
 player, coin, dragon都有自己的controller，沒有都塞在一起。
 
-player用的是character controller，但裡面的isgrounded判定不夠準確，所以寫自己用paycast寫function來判定。
+player用的是character controller，但裡面的isgrounded判定不夠準確，所以寫自己用raycast寫function來判定。
 bool IsGrounded()
 {
     return Physics.Raycast(transform.position, Vector3.down, margin);
@@ -36,7 +37,7 @@ Some special game objects which aren’t mentioned above:
 menu的how to play按鈕會切到另一個canvas，按另一個canvas的back即可返回。
 dragon的動畫，在追player的時候會飛，追到的話會攻擊。
 
-# How good your game is:
+How good your game is:
 金幣會旋轉，而且金幣的生成會在地板的左邊、右邊或中間。
 遊戲中偶爾會看到龍可愛的耳朵(有特別設計)。
 如果是撞到障礙物會被龍追到，而且龍會有攻擊的動畫，掉下去的話不會。
